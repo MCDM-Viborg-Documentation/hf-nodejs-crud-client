@@ -187,7 +187,3 @@ Nu har vi arbejdet med begge projekter og fået udvidet vores Model.
 Inden vi skal arbejde mere med username og password har vi lige en vigtig opgave.
 
 Gå til Step 02.
-
-
-
-

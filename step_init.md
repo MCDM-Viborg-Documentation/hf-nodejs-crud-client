@@ -10,9 +10,3 @@ Vi opretter en simpel client side til vores node server.
 Der er en readme for hvert trin.
 
 * Step_01 : Opret forbindelse.
-
-
-
-
-
-
