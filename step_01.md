@@ -10,7 +10,6 @@ Vi opretter en simpel client side til vores node server.
 ## Forudsætning.
 
 * Step 01 til 07 på node-serveren.
-* 
 
 # Step 1 : Opret forbindelse.
 
