@@ -10,14 +10,35 @@ Vi opretter en simpel client side til vores node server.
 ## Forudsætning.
 
 * Step 01 til 07 på node-serveren.
+* Download client filerne og opret en mappe du kalder `node-server-client`
+    * https://github.com/MCDM-Viborg-Documentation/hf-nodejs-crud-client/blob/main/materials/node-server-client-start-template.zip
+
 
 # Step 1 : Opret forbindelse.
 
-Start projektet med `liveserver` på `index.html`
+Start `node-server-client` projektet med `liveserver` på `index.html`
 
 I første omgang skal du have startet din node-server.
 
-Hvis du ikke har ændret port, på node serveren, fra `3000`, så skulle der allerede være hul igennem.
+På din node server skal vi have installeret en pakke så vores nye side kan tale sammen med vores server "croos-domain" altså påkryds af domæner/ip-adresser.
+
+I `node-server` projektet åbn terminalen og installér pakken `cors`
+
+```
+npm install cors
+```
+
+I `server.js` lige efter vi definere `const expressServer = express();`
+
+Der tilføjer vi `cors` som middleware/mellemmand ved hjælp af denne linie:
+
+```JavaScript
+expresServer.use(cors());
+```
+
+
+
+Hvis du ikke har ændret port, på node-serveren, fra port `3000`, *(se det i din terminal på serveren når du starter den.)* så skulle der allerede være hul igennem.
 
 Ellers skal vi åbne `/src/scrips/user.service.js` filen og ændre port øverst i filen hvor vi definere `endpoint` stien.
 
