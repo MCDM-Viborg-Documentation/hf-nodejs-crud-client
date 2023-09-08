@@ -40,7 +40,7 @@ expresServer.use(cors());
 
 Hvis du ikke har ændret port, på node-serveren, fra port `3000`, *(se det i din terminal på serveren når du starter den.)* så skulle der allerede være hul igennem.
 
-Ellers skal vi åbne `/src/scrips/user.service.js` filen og ændre port øverst i filen hvor vi definere `endpoint` stien.
+Ellers skal vi i `node-server-client`, åbne `/src/scrips/user.service.js` filen og ændre port øverst i filen hvor vi definere `endpoint` stien.
 
 ```JavaScript
 userservice.endpoint = 'http://localhost:3000/user';
